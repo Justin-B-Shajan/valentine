@@ -200,17 +200,23 @@ const TheQuestion = () => {
           >
             <div className="glass rounded-[2rem] md:rounded-[3rem] p-8 md:p-20 border border-crimson/20 shadow-[0_0_100px_rgba(220,20,60,0.2)]">
               <motion.div
-                className="text-[6rem] md:text-[12rem] mb-6 md:mb-12 leading-none"
+                className="relative mx-auto mb-6 md:mb-12 w-48 h-48 md:w-64 md:h-64 flex items-center justify-center p-2 bg-white rounded-full shadow-[0_0_50px_rgba(255,255,255,0.3)]"
                 animate={{
-                  scale: [1, 1.1, 1],
+                  scale: [1, 1.05, 1],
                 }}
                 transition={{
-                  duration: 0.8,
+                  duration: 2,
                   repeat: Infinity,
                   ease: 'easeInOut',
                 }}
               >
-                👩‍❤️‍👨
+                <div className="w-full h-full rounded-full overflow-hidden border-4 border-white">
+                  <img
+                    src="/Final.jpeg"
+                    alt="Success"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </motion.div>
 
               <h1 className="text-4xl md:text-8xl font-display text-white mb-6 md:mb-8 text-shadow leading-tight">
