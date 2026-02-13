@@ -42,6 +42,7 @@ const TheQuestion = () => {
         message: 'She said YES! To the rest of our lives! 💕',
         noAttempts: noCount
       });
+      window.dispatchEvent(new CustomEvent('play-music'));
       setSubmitted(true);
     } catch (error) {
       console.error('Error:', error);
